@@ -1,0 +1,27 @@
+//
+#define ledr 2
+#define ledg 3
+#define ledb 4
+
+void setup()
+{
+  int pines[]={ledr , ledg , ledb};
+  int senal[]={ 1  ,   1   ,   1 };
+    
+    
+    
+}
+
+void loop()
+{
+  for (int rojo = 0; rojo <= 255; rojo++) {
+    for (int verde = 0; verde <= 255; verde++) {
+      for (int azul = 0; azul <= 255; azul++) {
+        analogWrite(ledr, rojo);
+        analogWrite(ledg, verde);
+        analogWrite(ledb, azul);
+        delay(1);
+      }
+    }
+  }
+}
